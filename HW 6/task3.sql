@@ -1,11 +1,11 @@
---1
+-- 1
 SELECT DISTINCT w.name
 FROM Waiters w
 JOIN Bills b ON w.waiter_id = b.waiter_id
 JOIN Customers c ON b.customer_id = c.customer_id
 WHERE c.name = 'Tanya Singh';
 
---2
+-- 2
 SELECT DISTINCT r.date
 FROM Rooms r
 JOIN Teams t ON r.team_id = t.team_id
@@ -14,7 +14,7 @@ WHERE h.name = 'Charles' AND r.room_name = 'Green'
 AND r.date BETWEEN '2016-02-01' AND '2016-02-29';
 
 
---3
+-- 3
 SELECT w.name, w.surname
 FROM Waiters w
 JOIN Teams t ON w.team_id = t.team_id
